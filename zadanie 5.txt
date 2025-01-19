@@ -1,0 +1,47 @@
+﻿#include <iostream>
+using namespace std;
+
+
+class Animal {
+public:
+    
+    virtual void speak() const {
+        cout << "zwierzeta robią dzwięki." << endl;
+    }
+
+   
+    virtual ~Animal() = default;
+};
+
+class Dog : public Animal {
+public:
+    
+    void speak() const override {
+        cout << "pies szczeka." << endl;
+    }
+};
+
+
+class Cat : public Animal {
+public:
+    
+    void speak() const override {
+        cout << "kot miauczy." << endl;
+    }
+};
+
+int main() {
+    
+    Animal* animal1 = new Dog(); 
+    Animal* animal2 = new Cat(); 
+
+    
+    animal1->speak(); 
+    animal2->speak(); 
+
+    
+    delete animal1;
+    delete animal2;
+
+    return 0;
+}

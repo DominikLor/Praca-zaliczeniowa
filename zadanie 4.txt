@@ -1,0 +1,30 @@
+﻿#include <iostream>
+#include <cmath>    
+#include <stdexcept> 
+
+
+double calculateSqrt(double number) {
+    if (number < 0) {
+        throw std::invalid_argument("Blad: Pierwiastek kwadratowy z liczby ujemnej jest niedozwolony!");
+    }
+    return sqrt(number);
+}
+
+int main() {
+    double number;
+
+    std::cout << "Podaj liczbe, z ktorej chcesz obliczyc pierwiastek kwadratowy: ";
+    std::cin >> number;
+
+    try {
+        
+        double result = calculateSqrt(number);
+        std::cout << "Pierwiastek kwadratowy z " << number << " to " << result << std::endl;
+    }
+    catch (const std::invalid_argument& e) {
+        
+        std::cerr << "Wystapił wyjatek: " << e.what() << std::endl;
+    }
+
+    return 0;
+}
