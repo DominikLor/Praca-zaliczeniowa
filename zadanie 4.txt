@@ -23,7 +23,7 @@ int main() {
     }
     catch (const std::invalid_argument& e) {
         
-        std::cerr << "Wystapił wyjatek: " << e.what() << std::endl;
+        std::cerr << "Wystapił wyjatek: " << e.what() << std::endl; // wystąpił wyjątek
     }
 
     return 0;
