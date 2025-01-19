@@ -1,3 +1,4 @@
 #define jest bardziej elastyczne, ale mniej bezpieczne i trudniejsze do debugowania.
 
 constexpr zapewnia silniejsze gwarancje bezpieczeństwa typów, jest ściślej powiązane z językiem C++ i daje możliwość łatwego debugowania.
+Róźnice

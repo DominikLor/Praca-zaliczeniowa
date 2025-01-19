@@ -5,3 +5,4 @@ Dyrektywa #ifndef sprawdza przeciwieństwo warunku sprawdzanego przez #ifdef ele
 Dyrektywa  #pragma jest metodą określoną przez standard C, która dostarcza kompilatorowi dodatkowych informacji, poza tymi, które są przekazywane w samym języku .
 
 Dyrektywa #undef usuwa bieżącą definicję identifier . W konsekwencji, kolejne wystąpienia identifier są ignorowane przez preprocesor. Aby usunąć definicję makra za pomocą #undef, podaj tylko identyfikator makra, a nie listę parametrów.
+Wypowiedzi
