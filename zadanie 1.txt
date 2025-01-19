@@ -1,0 +1,8 @@
+Include- dyrektywa include służy do dołączania wskazanego pliku. Za pomoća nawiasów informuje w jakich katalogach ma być poszukiwny plik.
+
+Dyrektywa #ifndef sprawdza przeciwieństwo warunku sprawdzanego przez #ifdef element . Jeśli identyfikator nie został zdefiniowany lub jeśli jego definicja została usunięta z parametrem #undef , warunek ma wartość true (nonzero). W przeciwnym razie warunek ma wartość false (0).
+
+Dyrektywa  #pragma jest metodą określoną przez standard C, która dostarcza kompilatorowi dodatkowych informacji, poza tymi, które są przekazywane w samym języku .
+
+Dyrektywa #undef usuwa bieżącą definicję identifier . W konsekwencji, kolejne wystąpienia identifier są ignorowane przez preprocesor. Aby usunąć definicję makra za pomocą #undef, podaj tylko identyfikator makra, a nie listę parametrów.
+Wypowiedzi
